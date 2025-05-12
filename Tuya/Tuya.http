@@ -1,0 +1,6 @@
+@Tuya_HostAddress = http://localhost:5242
+
+GET {{Tuya_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
