@@ -20,6 +20,9 @@ namespace Tuya.Application.DomainService
 
         public async Task<Guid> CreateOrderAsync(OrderDto orderDto)
         {
+            if (orderDto == null || orderDto.Details == null || !orderDto.Details.Any())
+                return Guid.Empty;
+
             Order order = new Order()
             {
                 CustomerId = orderDto.CustomerId,
