@@ -19,7 +19,7 @@ namespace Tuya.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var customers = await _customerService.GetAllAsync();
+            IEnumerable<Customer> customers = await _customerService.GetAllAsync();
             return Ok(customers);
         }
 
