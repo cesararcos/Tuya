@@ -7,10 +7,12 @@ namespace Tuya.Application.DomainService
     public class OrdersService : IOrdersService
     {
         private readonly IOrderRepository _orderRepository;
+        private readonly ICustomerRepository _customerRepository;
 
-        public OrdersService(IOrderRepository orderRepository)
+        public OrdersService(IOrderRepository orderRepository, ICustomerRepository customerRepository)
         {
             _orderRepository = orderRepository;
+            _customerRepository = customerRepository;
         }
 
         public async Task<IEnumerable<Order>> GetAllAsync()
@@ -22,6 +24,9 @@ namespace Tuya.Application.DomainService
         {
             if (orderDto == null || orderDto.Details == null || !orderDto.Details.Any())
                 return Guid.Empty;
+
+            Customer? customer = await _customerRepository.GetByIdAsync(orderDto.CustomerId);
+            if (customer == null) return Guid.Empty;
 
             Order order = new Order()
             {

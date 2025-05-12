@@ -6,5 +6,6 @@ namespace Tuya.Domain
     {
         Task<IEnumerable<Customer>> GetAllAsync();
         Task<bool> SaveAsync(Customer customer);
+        Task<Customer?> GetByIdAsync(Guid id);
     }
 }

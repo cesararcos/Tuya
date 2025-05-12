@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuya", "Tuya\Tuya.csproj", "{C38B56B6-FCA0-498B-B1B1-FD11CAB8648A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuya", "Tuya\Tuya.csproj", "{C38B56B6-FCA0-498B-B1B1-FD11CAB8648A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuya.Domain", "Tuya.Domain\Tuya.Domain.csproj", "{154D3C5C-1CCE-4282-86FB-A476FD0C239B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuya.Domain", "Tuya.Domain\Tuya.Domain.csproj", "{154D3C5C-1CCE-4282-86FB-A476FD0C239B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuya.Application", "Tuya.Application\Tuya.Application.csproj", "{D1C32B71-78DD-46CB-80A0-194156B66505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuya.Application", "Tuya.Application\Tuya.Application.csproj", "{D1C32B71-78DD-46CB-80A0-194156B66505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuya.Infrastructure", "Tuya.Infrastructure\Tuya.Infrastructure.csproj", "{73510F31-15AF-4CEB-9651-26365190BBEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuya.Infrastructure", "Tuya.Infrastructure\Tuya.Infrastructure.csproj", "{73510F31-15AF-4CEB-9651-26365190BBEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuya.Tests", "Tuya.Tests\Tuya.Tests.csproj", "{33B0B967-920B-4676-B439-80782613B4C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{73510F31-15AF-4CEB-9651-26365190BBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73510F31-15AF-4CEB-9651-26365190BBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73510F31-15AF-4CEB-9651-26365190BBEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B0B967-920B-4676-B439-80782613B4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B0B967-920B-4676-B439-80782613B4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B0B967-920B-4676-B439-80782613B4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B0B967-920B-4676-B439-80782613B4C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

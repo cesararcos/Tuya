@@ -21,5 +21,10 @@ namespace Tuya.Infrastructure
             _context.Customers.Add(customer);
             return await _context.SaveChangesAsync() > 0;
         }
+
+        public async Task<Customer?> GetByIdAsync(Guid id)
+        {
+            return await _context.Customers.FirstOrDefaultAsync(o => o.Id == id);
+        }
     }
 }
